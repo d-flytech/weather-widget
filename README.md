@@ -1,6 +1,6 @@
 # Weather Widget
 
-A simple weather widget that displays a 10-day forecast using the Open-Meteo API. Built with HTML, CSS, and JavaScript, and powered by Axios for API calls. 
+A simple weather widget that displays a forecast using the Open-Meteo API. Built with HTML, CSS, JavaScript and TypeScript, and powered by Axios for API calls. 
 
 ## Features
 - Fetches weather data for a specified location
