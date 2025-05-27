@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                // Moderne JavaScript versie
+    "module": "ESNext",                // Gebruik ES modules, goed voor Vite
+    "moduleResolution": "Node",        // Resolving modules zoals Node doet
+    "strict": true,                    // Strenge checks aan
+    "esModuleInterop": true,           // Handig voor importeren van CommonJS modules zoals axios
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,              // Snelheid: check libs niet
+    "outDir": "dist",                  // Output folder bij build
+    "baseUrl": ".",                    // Basis voor module imports
+    "paths": {}                       // Geen aliases nu
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],  // Je TS bestanden in src
+  "exclude": ["node_modules", "dist"]
+}

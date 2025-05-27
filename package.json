@@ -1,0 +1,22 @@
+{
+  "name": "weather-widget",
+  "version": "1.0.0",
+  "description": "Simple weather widget with TypeScript and Vite",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["weather", "typescript", "vite"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "typescript": "^5.8.3"
+  }
+}
+
