@@ -1,6 +1,6 @@
 # Weather Widget
 
-A simple weather widget that displays a forecast using the Open-Meteo API. Built with HTML, CSS, JavaScript and TypeScript, and powered by Axios for API calls. 
+A simple weather widget that displays a forecast using the Open-Meteo API. Built with HTML, CSS, TypeScript, Vite, and powered by Axios for API calls. 
 
 ## Features
 - Fetches weather data for a specified location
@@ -10,8 +10,8 @@ A simple weather widget that displays a forecast using the Open-Meteo API. Built
 ## How to Run
 1. Clone the repository.
 2. Install dependencies with `npm install`.
-3. Start the local server with `npx http-server -p 8080`.
-4. Open `http://localhost:8080` in your browser.
+3. Start the local server with `npm run dev`.
+4. Open `http://localhost:3003` in your browser.
 
 ## API Source
 Data provided by [Open-Meteo](https://open-meteo.com/).
