@@ -1,5 +1,5 @@
-import { getWeather } from "./weather-service.js";
-import { getWeatherIcon, formatDate } from "./utils.js";
+import { getWeather } from "./services/weather-service.js";
+import { getWeatherIcon, formatDate } from "./utils/utils.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   renderDiv();

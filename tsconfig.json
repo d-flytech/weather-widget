@@ -9,7 +9,8 @@
     "skipLibCheck": true,              // Snelheid: check libs niet
     "outDir": "dist",                  // Output folder bij build
     "baseUrl": ".",                    // Basis voor module imports
-    "paths": {}                       // Geen aliases nu
+    "paths": { 
+      "@/*": ["src/*"]}                       // Geen aliases nu
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],  // Je TS bestanden in src
   "exclude": ["node_modules", "dist"]
