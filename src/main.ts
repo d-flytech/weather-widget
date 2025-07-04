@@ -17,9 +17,9 @@ async function renderDiv() {
         ${data.time.map((time, i) => {
           const maxTemp = Math.round(data.temperature_2m_max[i]);
           const minTemp = Math.round(data.temperature_2m_min[i]);
-          const iconName = getWeatherIcon(maxTemp, minTemp);
+          const iconName = getWeatherIcon(data.weathercode[i]);
           const dateFormatted = formatDate(time);
-
+          console.log("Weather code for: ", data.time[i], "is", data.weathercode[i]); //checking weathercode daily in devtools
           return `
             <div class="weather-day">
               <div class="weather-date">${dateFormatted}</div>

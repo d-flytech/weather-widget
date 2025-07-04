@@ -1,7 +1,8 @@
-export function getWeatherIcon(maxTemp: number, minTemp: number): string {
-  if (minTemp < 13) return "rain";
-  if (maxTemp > 22) return "sun";
-  return "cloudy";
+export function getWeatherIcon(code:number): string {
+  if (code === 0) return "sun";
+  if ([1, 2, 3].includes(code)) return "cloudy";
+  if ([51,53,55,61,63,65,80,81,82].includes(code)) return "rain";
+  return "unknown";
 };
 
 export function formatDate(dateStr: string): string {
