@@ -4,3 +4,9 @@ export interface WeatherData {
     temperature_2m_min: number[];
     weathercode: number[];
 };
+
+export interface CityOption {
+    name: string;
+    lat: number;
+    lon: number;
+};
