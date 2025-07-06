@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,16 @@
     <link rel="icon" href="/weather-favocon.png">
     <script type="module" src="/src/main.ts"></script>
 </head>
+
 <body>
     <h1>Weather Forecast</h1>
-     <select id="location"></select>
-     <div id="weather"></div>
-    
-    
+    <section class="location-selector">
+        <label for="location">Choose location:</label>
+        <select id="location"></select>
+    </section>
+
+    <section id="weather"></section>
+
 </body>
+
 </html>
