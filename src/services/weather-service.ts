@@ -1,10 +1,11 @@
 import axios from "axios";
 import { WeatherData } from "../types/types";
 
+export async function getWeather(latitude:number, longitude:number): Promise<WeatherData> {
 const API_URL =
-  "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Europe/Berlin";
+  `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Europe/Amsterdam`;
 
-export async function getWeather(): Promise<WeatherData> {
+
 try{
     const response = await axios.get<{daily: WeatherData}>(API_URL);
     return response.data.daily;
